@@ -6,7 +6,7 @@ use Barryvdh\Snappy\IlluminateSnappyPdf;
 use Barryvdh\Snappy\PdfWrapper;
 use Barryvdh\Snappy\ServiceProvider;
 
-class DDocServiceProvider extends ServiceProvider
+class DataDocServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
