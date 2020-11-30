@@ -1,0 +1,55 @@
+{
+    "name": "dishtail/laravel-data-doc",
+    "type": "library",
+    "description": "直接页面显示数据字典",
+    "keywords": [
+        "Laravel",
+        "Jormin",
+        "DDoc"
+    ],
+    "homepage": "https://github.com/dishtail/laravel-data-doc",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dishtail",
+            "email": "dishtail@gmail.com",
+            "homepage": "https://www.94vessel.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dishtail\\DataDoc\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dishtail\\DataDoc\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        },
+        "laravel": {
+            "providers": [
+                "Dishtail\\DataDoc\\DataDocServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
