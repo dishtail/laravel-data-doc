@@ -23,7 +23,6 @@
 	执行命令后会在 `config` 目录下生成两个文件：
 	
 	
-	
 ## 使用
 
 安装扩展后，浏览器访问 `[http|https]://[domain]/doc/data_doc`
