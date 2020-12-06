@@ -12,20 +12,6 @@
 <div id="wrapper">
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top overlay" id="sidebar-wrapper" role="navigation">
-        <div class="export-wrap">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <i class="fa fa-cloud-download"></i> 导出文档
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="{{ route('ddoc.export','html') }}"><i class="fa fa-file-zip-o"></i> Html</a></li>
-                    <li><a href="{{ route('ddoc.export','pdf') }}"><i class="fa fa-file-pdf-o"></i> PDF</a></li>
-                    <li><a href="{{ route('ddoc.export','md') }}"><i class="fa fa-file-pdf-o"></i> Markdown</a></li>
-
-                </ul>
-            </div>
-        </div>
         <ul class="nav sidebar-nav">
             @foreach($tables as $table)
                 <li>

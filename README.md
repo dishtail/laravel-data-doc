@@ -6,7 +6,7 @@
 	$ composer require dishtail/laravel-data-doc
 	```
 
-## 配置
+## 配置 config->app.php文件
 
 1. 注册 ServiceProvider:
 	
@@ -18,9 +18,13 @@
 
 	```shell
 	php artisan vendor:publish
-	```
+	``` 
 	
-	执行命令后会在 `config` 目录下生成两个文件：
+	执行命令后选择0,然后会在 `config` 目录下生成两个文件：
+	
+	````
+	laravel-ddoc  ---- 配置数据库字典底部信息
+	````
 	
 	
 ## 使用
