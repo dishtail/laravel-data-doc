@@ -20,7 +20,7 @@
 	php artisan vendor:publish
 	``` 
 	
-	执行命令后选择0,然后会在 `config` 目录下生成两个文件：
+	执行命令后选择0,然后会在 `config` 目录下生成文件：
 	
 	````
 	laravel-ddoc  ---- 配置数据库字典底部信息

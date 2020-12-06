@@ -2,8 +2,6 @@
 
 namespace Dishtail\DataDoc;
 
-use Barryvdh\Snappy\IlluminateSnappyPdf;
-use Barryvdh\Snappy\PdfWrapper;
 use Barryvdh\Snappy\ServiceProvider;
 
 class DataDocServiceProvider extends ServiceProvider
@@ -33,16 +31,6 @@ class DataDocServiceProvider extends ServiceProvider
            || $this->isLumen()) {
             require __DIR__.'/routes.php';
         }
-    }
-
-    /**
-     * Register any package services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        $this->app->register('Barryvdh\Snappy\ServiceProvider');
     }
 
     protected function isLumen()

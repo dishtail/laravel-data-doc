@@ -4,7 +4,6 @@
     "description": "直接页面显示数据字典",
     "keywords": [
         "Laravel",
-        "Jormin",
         "DDoc"
     ],
     "homepage": "https://github.com/dishtail/laravel-data-doc",
